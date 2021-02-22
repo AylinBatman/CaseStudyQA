@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "7696db12-ca4c-4c29-9e03-cbe086949f71",
+		"name": "hepsiBuradaEntegrasyonCases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "jsonApı",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "47d88343-5a71-4a1a-b6df-c83aae7ea3d2",
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://generator.swagger.io/api/swagger.json",
+					"protocol": "http",
+					"host": [
+						"generator",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"api",
+						"swagger.json"
+					]
+				},
+				"description": "Http status code 200 verirse başarılı, değilse başarısız olacaktır."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
